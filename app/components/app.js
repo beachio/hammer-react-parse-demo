@@ -1,4 +1,4 @@
-Parse.initialize("yl15iLrGL4Wb31gasfCSojl4Pj4Yhwj0MMd17EyW", "qxWQwqVXxXz1JTrsRMwsjyAyBvQ2VGPb1J9TX2xt");
+Parse.initialize("M48MDA352i6cXXXXXXXXXXXXXXtjt6fN4KlFSumT", "q3ApsBlBEkSsXXXXXXXXXXXXXXIjXcxj9CxNqrNW");
 
 var Tab = ReactTabs.Tab;
 var Tabs = ReactTabs.Tabs;
