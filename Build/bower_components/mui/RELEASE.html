@@ -1,0 +1,54 @@
+<h1>Release Instructions</h1>
+
+<ol>
+  <li>Build distribution</li>
+</ol>
+
+<p><code>bash
+  $ ./node_modules/.bin/gulp build-dist
+ </code></p>
+
+<ol>
+  <li>
+    <p>Add release notes to CHANGELOG.md</p>
+  </li>
+  <li>
+    <p>Change version number in package.json</p>
+  </li>
+  <li>
+    <p>Change version number in bower.json</p>
+  </li>
+  <li>
+    <p>Change version number in package.js</p>
+  </li>
+  <li>
+    <p>Change version number in README.md</p>
+  </li>
+  <li>
+    <p>Commit changes and tag code</p>
+  </li>
+</ol>
+
+<p><code>bash
+  $ git add .
+  $ git commit -a -m "bumped version number"
+  $ git push origin master
+  $ git tag <version-number>
+  $ git push --tags
+ </code></p>
+
+<ol>
+  <li>Push changes to NPM</li>
+</ol>
+
+<p><code>bash
+  $ npm publish
+ </code></p>
+
+<ol>
+  <li>Update package on Meteor repository</li>
+</ol>
+
+<p><code>bash
+  $ meteor publish
+ </code></p>

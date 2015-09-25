@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head>
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      <title>Sassy Slim starter pack</title><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><link href="/favicon.ico" rel="shortcut icon" /><link href="/favicon.ico" rel="apple-touch-icon" /><meta content="telephone=no" name="format-detection" /><link rel='stylesheet' href='bower_components/mui/dist/css/mui.css'>
+<link rel='stylesheet' href='app/assets/styles/application.css'><script src='bower_components/parse-js-sdk/lib/parse.js'></script>
+<script src='bower_components/react/react.js'></script>
+<script src='bower_components/react/react-with-addons.js'></script>
+<script src='bower_components/react-tabs/dist/react-tabs.js'></script>
+<script src='bower_components/react/JSXTransformer.js'></script>
+<script src='bower_components/mui/dist/react/mui-react.js'></script><script src="https://www.parsecdn.com/js/parse-react.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css" /></head><body><div id="title"><div class="hammer-head"></div><h1>Hammer Resources</h1><p>Demo for  <a class="strong" href="http://blog.beach.io">building a static powered app with React and Parse.com</a></p><p>Built with Hammer, Hosted on Forge, Locally run with Anvil.</p></div><div id="react-container"></div><script src="app/components/document-box.js" type="text/jsx"></script><script src="app/components/app.js" type="text/jsx"></script></body></html>

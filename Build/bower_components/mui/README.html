@@ -1,0 +1,166 @@
+<h1>Material Design CSS Framework</h1>
+
+<p><a href="https://www.muicss.com"><img src="https://www.muicss.com/static/favicons/icon-192x192.png" alt="MUI" /></a></p>
+
+<p>MUI is a lightweight CSS framework that follows Google’s Material Design guidelines.</p>
+
+<p><a href="https://gitter.im/muicss/mui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/muicss/mui" /></a>
+<a href="https://travis-ci.org/muicss/mui"><img src="https://travis-ci.org/muicss/mui.svg?branch=master" alt="Build Status" /></a>
+<a href="https://david-dm.org/muicss/mui"><img src="https://david-dm.org/muicss/mui.svg" alt="Dependency Status" /></a>
+<a href="https://david-dm.org/muicss/mui#info=devDependencies"><img src="https://david-dm.org/muicss/mui/dev-status.svg" alt="devDependency Status" /></a></p>
+
+<p><strong>Use From the CDN:</strong></p>
+
+<p>```html</p>
+<link href="//cdn.muicss.com/mui-0.1.23/css/mui.min.css" rel="stylesheet" type="text/css" />
+
+<script src="//cdn.muicss.com/mui-0.1.23/js/mui.min.js"></script>
+
+<p>```</p>
+
+<p>Or for development you can use the latest:</p>
+
+<p>```html</p>
+<link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+
+<script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+
+<p>```</p>
+
+<p><strong>Install with Bower:</strong></p>
+
+<p><code>shell
+$ bower install mui
+</code></p>
+
+<h2>Features</h2>
+
+<p>MUI is designed from the ground up to be fast, small and developer friendly. By design it only includes the basic components you need to build a site that follows Google’s Material Design guidelines. Some of the key features of MUI are:</p>
+
+<ul>
+  <li>Small footprint: mui.min.css - 6.7K, mui.min.js - 4.9K (gzipped)</li>
+  <li>A responsive grid to make mobile-friendly sites</li>
+  <li>No external dependencies</li>
+  <li>CSS library that can be customized with your own colors</li>
+  <li>JS library can be loaded asyncronously</li>
+  <li>Email library for styling HTML emails</li>
+</ul>
+
+<p>To get started using MUI, go to the <a href="https://www.muicss.com">MUI website</a> to see examples and download boilerplate HTML.</p>
+
+<h2>Browser Support</h2>
+
+<p>MUI is tested and works in:</p>
+
+<ul>
+  <li>IE10+</li>
+  <li>Latest Stable: Firefox, Chrome, Safari</li>
+  <li>iOS 6+</li>
+</ul>
+
+<h2>Development Quickstart</h2>
+
+<ol>
+  <li>Install dependencies</li>
+</ol>
+
+<ul>
+  <li>nodejs (http://nodejs.org/)</li>
+  <li>npm (https://www.npmjs.org/)</li>
+  <li>sass (http://sass-lang.com/)</li>
+  <li>http-server (via npm)</li>
+</ul>
+
+<ol>
+  <li>
+    <p>Clone repository</p>
+
+    <p><code>bash
+$ git clone git@github.com:muicss/mui.git
+$ cd mui
+</code></p>
+  </li>
+  <li>
+    <p>Install node dependencies using npm</p>
+
+    <p><code>bash
+$ npm install
+</code></p>
+  </li>
+  <li>
+    <p>Build examples</p>
+
+    <p><code>bash
+$ ./node_modules/.bin/gulp build-examples
+</code></p>
+
+    <p>To view the examples you can use any static file server. To use the nodejs <code>http-server</code> module:</p>
+
+    <p><code>bash
+$ npm install http-server
+$ ./node_modules/.bin/http-server -p 3000
+</code></p>
+
+    <p>Then visit http://localhost:3000/examples</p>
+  </li>
+  <li>
+    <p>Watch changes and re-build</p>
+
+    <p><code>bash
+$ ./node_modules/.bin/gulp watch
+</code></p>
+  </li>
+</ol>
+
+<h2>Run tests</h2>
+
+<h3>Unit tests</h3>
+
+<p>To run the unit tests from the command line, run ‘mocha’:</p>
+
+<p><code>bash
+$ ./node_modules/.bin/mocha
+</code></p>
+
+<h3>E2E tests</h3>
+
+<p>To run the E2E tests first compile the unit test files into a version that runs in the browser:</p>
+
+<p><code>bash
+$ ./node_modules/.bin/gulp build-e2e-tests
+</code></p>
+
+<p>Then visit http://localhost:3000/e2e-tests</p>
+
+<h2>Create a production build</h2>
+
+<p>To create a production build of the app, run <code>gulp build-dist</code>:</p>
+
+<p><code>bash
+$ ./node_modules/.bin/gulp build-dist
+</code></p>
+
+<p>The build will be located in the <code>dist</code> directory:</p>
+
+<pre>
+dist/
+├── css
+│   ├── mui.css
+│   ├── mui.min.css
+├── js
+│   ├── mui.js
+│   └── mui.min.js
+├── email
+│   ├── mui-email-inline.css
+|   └── mui-email-styletag.css
+├── react
+│   ├── mui-react.js
+│   └── mui-react.min.js
+└── webcomponents
+|   ├── mui-webcomponents.js
+|   └── mui-webcomponents.min.js
+└── extra
+    ├── mui-colors.css
+    ├── mui-combined.js
+    └── mui-react-combined.js
+</pre>

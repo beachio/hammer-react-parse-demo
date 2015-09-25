@@ -1,0 +1,80 @@
+@import url(tools/normalize.css);
+html, body {
+  margin: 20px;
+  background: #2d2d2d;
+  font: 100% "Open Sans", sans-serif;
+  font-weight: 300; }
+  html *, body * {
+    box-sizing: border-box; }
+
+h1, h2, h3, p, ul, li, div {
+  color: white; }
+
+#title {
+  text-align: center; }
+  #title .hammer-head {
+    background-image: url(../img/hammer_ico.png);
+    background-size: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    margin: 40px 0; }
+  #title h1 {
+    border-bottom: 0px;
+    margin-bottom: 20px; }
+
+.strong {
+  font-weight: bold; }
+
+#react-container {
+  margin-top: 40px; }
+
+.react-tabs [role=tablist] {
+  margin: 0; }
+  .react-tabs [role=tablist] li[role=tab][aria-selected=true] {
+    border-bottom: 1px solid #aaa;
+    color: #666; }
+
+.documentBox {
+  display: flex;
+  flex-flow: row nowrap;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  min-height: 600px; }
+
+.documentList {
+  min-height: 600px;
+  max-height: 900px;
+  flex: 0 0 200px;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  overflow: scroll; }
+  .documentList .document {
+    padding: 10px 30px;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer; }
+    .documentList .document.active {
+      font-weight: bold; }
+
+.documentPreview {
+  flex: 1 0; }
+  .documentPreview img {
+    width: 100%; }
+
+.documentBoxDefaultState {
+  width: 100%;
+  padding: 100px 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20%;
+  background-image: url(../img/folder_ico.png);
+  background-size: 10%;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  height: 400px; }
+
+.mui-panel {
+  margin-bottom: 0px; }
+  .mui-panel p {
+    color: #666; }

@@ -1,0 +1,22 @@
+{
+  "name": "filebrowser",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Schofield <stevebschofield@gmail.com>"
+  ],
+  "description": "demo project",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mui": "~0.1.23",
+    "parse-js-sdk": "~1.4.2",
+    "react": "~0.13.3",
+    "react-tabs": "~0.4.1"
+  }
+}

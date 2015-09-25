@@ -1,0 +1,34 @@
+{
+  "name": "react-tabs",
+  "version": "0.4.1",
+  "homepage": "https://github.com/mzabriskie/react-tabs",
+  "authors": [
+    "Matt Zabriskie"
+  ],
+  "description": "React tabs component",
+  "main": "./dist/react-tabs.js",
+  "keywords": [
+    "react",
+    "tabs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "build",
+    "examples",
+    "lib",
+    "node_modules",
+    "specs",
+    "package.json"
+  ],
+  "_release": "0.4.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.1",
+    "commit": "89128762bafe2305cdb4155fafea7c1ea7a0c14e"
+  },
+  "_source": "git://github.com/mzabriskie/react-tabs.git",
+  "_target": "~0.4.1",
+  "_originalSource": "react-tabs",
+  "_direct": true
+}
