@@ -1,6 +1,10 @@
 # "Serverless" React App with Hammer
 
-<some reasons why it's so cool here>
+#### Demo
+ See [hammersources.getforge.io](http://hammersources.getforge.io/)
+ 
+#### Tutorial Write Up
+ See [Beach Blog Post](http://blog.beach.io) 
 
 #### Take
 This [SlimSass](https://github.com/flywithmemsl/hammerslimsass/blob/master/slimsass.hammer?raw=true) Hammer template or initialize new Hammer project.
